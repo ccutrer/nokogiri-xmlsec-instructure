@@ -12,10 +12,13 @@ gemspec
 gem "debug", "~> 1.11"
 gem "rake", "~> 13.3"
 gem "rake-compiler", "~> 1.3"
+gem "rake-compiler-dock", "~> 1.9"
 gem "rspec", "~> 3.13"
 gem "rubocop-inst", "~> 1.2"
+gem "rubocop-packaging", "~> 0.6"
 gem "rubocop-rake", "~> 0.7"
 gem "rubocop-rspec", "~> 3.6"
+gem "ruby_memcheck", "~> 3.0"
 
 lockfile do
   gem "nokogiri", "~> 1.18.9"

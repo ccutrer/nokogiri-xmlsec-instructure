@@ -4,6 +4,7 @@ inherit_gem:
   - rubocop-rspec.yml
 
 plugins:
+  - rubocop-packaging
   - rubocop-rake
 
 AllCops:

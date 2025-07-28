@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/xmlsec/version"
+require_relative "lib/nokogiri/xmlsec/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "nokogiri-xmlsec-instructure"
-  spec.version       = Xmlsec::VERSION
+  spec.version       = Nokogiri::Xmlsec::VERSION
   spec.authors       = ["Albert J. Wong", "Cody Cutrer"]
   spec.email         = ["awong.dev@gmail.com", "cody@instructure.com"]
   spec.description   = 'Adds support to Ruby for encrypting, decrypting,
@@ -23,9 +23,10 @@ Gem::Specification.new do |spec|
   spec.metadata["rubygems_mfa_required"] = "true"
 
   spec.files = Dir["{exe,lib}/**/*"]
-  spec.extensions = %w[ext/nokogiri_ext_xmlsec/extconf.rb]
+  spec.extensions = %w[ext/nokogiri_xmlsec/extconf.rb]
 
   spec.required_ruby_version = ">= 3.2"
 
+  spec.add_dependency "mini_portile2", "~> 2.8.2" # keep version in sync with extconf.rb
   spec.add_dependency "nokogiri", "~> 1.13"
 end

@@ -1,7 +1,13 @@
 /*.gem
 /.bundle
-/lib/nokogiri_ext_xmlsec.bundle
-/lib/nokogiri_ext_xmlsec.so
+/ext/nokogiri_xmlsec/**/nokogiri_xmlsec.dll
+/ext/nokogiri_xmlsec/include/
+/gems/
+/include/
+/lib/nokogiri/xmlsec/**/nokogiri_xmlsec.bundle
+/lib/nokogiri/xmlsec/**/nokogiri_xmlsec.so
+/Makefile
 /mkmf.log
-/pkg
-/tmp
+/pkg/
+/ports/
+/tmp/

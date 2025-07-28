@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require "nokogiri/xmlsec/version"
+
+# backcompat
 module Xmlsec
-  VERSION = "0.11.0"
+  VERSION = Nokogiri::Xmlsec::VERSION
 end
